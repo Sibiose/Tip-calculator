@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <h1 class="title">SPLI<br>TTER</h1>
+<div class="container">
+
+  <!-- Calculator DIV-->
+    <div class="calculator">
+        
+                             <!-- Billing part -->
+             
+             <h3>Bill</h3>
+             
+             <input class="billInput input" type="text" name=""> 
+             
+
+                            <!-- Tip Buttons grid-->
+            <h3>Select Tip %</h3>
+            <div class="tipbuttons">
+             <button class="percent5">5%</button>
+             <button class="percent10">10%</button>
+             <button class="percent15">15%</button>
+             <button class="percent25">25%</button>
+             <button class="percent50">50%</button>
+             <input class="custom" type="text" name="custom">   
+            </div>
+             
+
+                          <!-- People number section-->
+             <div class= "title-container">
+             <h3>Number of People</h3>
+             <span class="error hide">Can't be zero!</span>
+           </div>
+             <input class="peopleInput input" type="text" name="">
+                             
+    </div><!-- Calculator div ENding-->
+
+
+<!--The SCREEN DIV-->
+
+    <div class="screen">      
+      
+      <div class="tip result">    <!--Tip Amount -->
+          <div class="description">
+          <h3 class="description-h3">Tip Amount</h3>
+          <p class="description-p">/ person</p>
+          </div>
+          <h1 class="tiptotal total"> $ 0.00</h1>
+         
+      </div>
+
+      <div class="person result">  <!-- Total Amount-->
+          <div class="description">
+          <h3 class="description-h3">Total</h3>
+          <p class="description-p">/ person</p>
+          </div>
+          <h1 class="peopletotal total">$ 0.00</h1>
+      </div>
+      <button class="reset">RESET</button>            <!--Reset Button -->
+                 
+    </div>        <!-- Screen div Ending-->
+
+</div>  <!-- Container End-->
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sibiose</a>.
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
