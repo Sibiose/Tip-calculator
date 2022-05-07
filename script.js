@@ -9,12 +9,6 @@ let btnReset = document.querySelector(".reset");
 const percentBtns = [...document.querySelectorAll(".percent-btn")];
 const values = [5, 10, 15, 25, 50];
 
-percentBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    updateTip(values[percentBtns.indexOf(btn)] / 100);
-  });
-});
-
 /**
  * A function that calculates the split sum between the number of people that are paying
  */
@@ -89,9 +83,16 @@ function keypressUpdateTipCustom(event) {
   }
 }
 
+// Adding Event Listeners
+
 customInput.addEventListener("keypress", keypressUpdateTipCustom);
 peopleInput.addEventListener("keypress", keypressUpdateTotal);
 btnReset.addEventListener("click", reset);
+percentBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    updateTip(values[percentBtns.indexOf(btn)] / 100);
+  });
+});
 
 /*RESET FUNCTION*/
 
